@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<title>BHARAT || MAIN</title>
+<meta charset="UTF-8">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="http://fonts.cdnfonts.com/css/samarkan" rel="stylesheet">
+<style type="text/css">  
+        @font-face {
+            font-family: KrutiDev;
+            src: url(assets/kurti.ttf);
+        }
+        /*Download Zip file for KrutiDev woff font from internet, Unzip it, Paste 
+          the folder in your website folder. I have taken k010*/
+    </style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Asar&display=swap');
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('assets/mainbg.png');
+  min-height: 100%;
+}
+
+
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+section {
+  width: 100%;
+  display: inline-block;
+  background: #333;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-distributed{
+	background: green;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i></i> ABOUT</a>
+    <a href="#install" class="w3-bar-item w3-button w3-hide-small"><i></i>INSTALL</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i></i> PRACTICE</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i></i>DOCUMENTATION</a>
+   
+ <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-green">
+      <i class="w3-bar-item "><span style="font-family: 'Samarkan', sans-serif; font-size: 30px; color: green;">bh<span class="w3-hide-small" style="color: orange;">ra</span>t</span></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home" style="height: 600px;">
+    <div align="right" class="class="w3-right">
+    <br><br><br><br>
+    <span class="w3-right" style="font-family: 'Samarkan', sans-serif; font-size: 150px; color: green; position: relative; top: 20px; left: -100px">bh<span class="w3-hide-small" style="color: orange;">ra</span>t</span>
+    </div>
+    <div  class="w3-left" style="white-space:nowrap;" style="font-family: 'Asar', serif;">
+    <span class="w3-left" style="font-family: 'Asar', serif; font-size: 80px; color: black; position: relative; top: 20px; left: 100px"><b><b>A Programing<br>Language in</b></b><BR><span class="w3-hide-small" style="color: green; "font-family: 'Asar', serif;">हिंदी</span></span>
+
+    
+    
+  </div>
+</div>
+
+<br>
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h1 class="w3-center" style="font-family: 'Asar', serif;">भारत के बारे में</h1>
+  
+  
+    <div align="center" class="w3-center">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large" style="font-family: 'Asar', serif;">भारत हिंदी आधुनिक प्रोग्रामिंग भाषा है</p>
+      <p style="font-family: 'Asar', serif;">भारत हिंदी  प्रोग्रामिंग भाषा है और एक आधुनिक प्रोग्रामिंग भाषा की सभी बुनियादी कार्यक्षमताएं हैं। For loop से Random और function से condition तक । इसका interpreter python में लिखा गया है। भारत अभी पहले चरण में है</p>
+    </div>
+    
+  </div>
+</div>
+<br>
+
+
+
+<br>
+<div class="w3-container w3-light-orange" style="padding:128px 16px" id="install">
+  <div class="w3-row-padding">
+    <div  class="w3-col m6">
+      <h3>Installation</h3>
+      <p style="font-family: 'Asar', serif;">आपको नमस्कार<br> 
+आप ऑनलाइन भारत के साथ प्रोग्रामिंग का उपयोग कर सकते हैं, लेकिन यदि आप अपने सिस्टम में स्थानीय रूप से स्थापित करना चाहते हैं तो आपको इन चरणों का पालन करना होगा<ol style="font-family: 'Asar', serif;"><li>अपने सिस्टम पर Python स्थापित करें।<li>Github से भरत को क्लोन करें।<li>Interpretor चलाने के लिए कमांड 'python main.py' का उपयोग करें।<li>या फिर आप अपना कोड लिख सकते हैं और इसे एक्सटेंशन filename.bh सेव कर सकते हैं। इसे `python main.py <name>.bh` कमांड द्वारा चला सकते हैं।  <li> एंड्रॉयड में, आप भारत का उपयोग करने के लिए टर्मक्स ऐप का उपयोग कर सकते हैं।</ol></p>
+      <p style="font-family: 'Asar', serif;"><a href="https://github.com/Abhishek-op/Bharat" class="w3-button w3-black"><i class="fa fa-github"> </i> Github पर भारत</a><br><br><a href="https://github.com/Abhishek-op/RESME" class="w3-button w3-black"><i class="fa fa-home"> </i> ऑनलाइन IDE से शुरू करने के लिए यहां क्लिक करें </a></p>
+    </div>
+    <div align="right" class="w3-col m6"
+         <iframe align="center" width="80%" height="600px" src="https://replit.com/@abhi222/Bharat?lite=true&outputonly=1"></iframe></div> 
+  </div>
+</div>
+
+
+<br>
+<!-- Footer -->
+<footer class="footer-distributed" ID="about">
+
+			<div class="footer-left">
+
+				<h1><span style="font-family: 'Samarkan', sans-serif; color: white;">bh<span class="w3-hide-small" style="color: orange;">ra</span>t</span></h1>
+
+				<p class="footer-links">
+					<a href="#" class="link-1">Home</a>
+					
+					
+				
+				
+					<a href="#work">About</a>
+					
+					<a href="#about">Pratics</a>
+					
+					<a href="mailto:dixaab44@gmail.com">Contact</a>
+				</p>
+
+				<p class="footer-company-name">RESME @ 2021</p>
+			</div>
+
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-github"></i>
+					<p><a href="https://github.com/Abhishek-op/">https://github.com/Abhishek-op/</a></p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:dixaab44@gmail.com">dixaaab44@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About Project</span>
+					Bharat is a hindi programing language.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#https://github.com/Abhishek-op"><i class="fa fa-github"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
