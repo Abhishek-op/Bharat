@@ -161,7 +161,18 @@ class BharatExecute:
         if node[0] == 'randomrange':
             result = random.randrange(self.walkTree(node[1]), self.walkTree(node[2]))
             return result
-
+        if node[0] == 'for_loop':
+            if node[1][0] == 'for_loop_setup':
+                loop_setup = self.walkTree(node[1])
+                loop_counter = self.env[loop_setup[0]]
+                loop_limit = loop_setup[1]
+                for i in range(loop_counter, loop_limit + 1):
+                    self.env[loop_setup[0]] = i
+                    res = self.walkTree(node[2])
+                    if res is not None:
+                        self._out(res)
+        if node[0] == 'for_loop_setup':
+            return (self.walkTree(node[1]), self.walkTree(node[2]))
         if node[0] == 'var':
             try:
                 return self.env[node[1]]
