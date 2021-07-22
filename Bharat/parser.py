@@ -8,7 +8,7 @@ class BharatParser(Parser):
 
     precedence = (
         ('left', '.'),
-        ('left', ADD, '-'),
+        ('left', '+', '-'),
         ('left', '*', '/'),
         ('right', 'UMINUS')
     )
@@ -30,7 +30,7 @@ class BharatParser(Parser):
     def expr(self, p):
         return ('addstr', p.expr0, p.expr1)
 
-    @_('expr ADD expr')
+    @_('expr "+" expr')
     def expr(self, p):
         return ('add', p.expr0, p.expr1)
 
