@@ -5,6 +5,7 @@
 ![image](https://img.shields.io/static/v1?label=maintaining&message=yes&color=brightgreen)
 ### एक हिन्दी प्रोग्रामिग लैग्वेज
 भारत हिंदी प्रोग्रामिंग भाषा है और एक आधुनिक प्रोग्रामिंग भाषा की सभी बुनियादी कार्यक्षमताएं हैं। For loop से Random और function से condition तक । इसका interpreter python में लिखा गया है। भारत अभी पहले चरण में है
+
 # 📌Documentation
 ## Datatypes
 1. int => numbers 1-9
@@ -19,7 +20,7 @@
 # this is a comment.
 // this is also a comment
 ```
-## Commands used on Lng language
+## Commands used on Bharat language
 ### दिखाओ""
 **ex:**
 ```
