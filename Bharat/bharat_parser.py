@@ -269,7 +269,7 @@ class BharatParser(Parser):
     def expr(self, p):
         return ('class_func_call', p.ID0, p.ID1, ('args', p.args))
 
-    @_('expr ID "(" args ")"')
+    @_('expr PIPE ID "(" args ")"')
     def expr(self, p):
         return ('call', p.ID, ('args', [p.expr] + p.args))
 
